@@ -1,0 +1,133 @@
+/* Main layout for the page with React logo on the left and login form on the right */
+.login-page {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    /* Set black background */
+}
+
+/* React logo container with rotation effect */
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Added to stack the logo and title vertically */
+    padding-left: 10%;
+}
+
+.react-logo {
+    width: 500px;
+    /* Increased the size of the logo */
+    height: 600px;
+    /* Set height to match increased width */
+    animation: rotate-logo 3s infinite linear;
+}
+
+.react-logo-text {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ccc;
+    /* Adjust spacing as needed */
+}
+
+/* Keyframes for the rotating logo */
+@keyframes rotate-logo {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Login form container */
+.login-form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10%;
+}
+
+/* Styling for the login form with hover and button effects */
+.login-form {
+    background: #ffffff;
+    padding: 3rem;
+    /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    /* Increased width */
+    height: 450px;
+    /* Increased height */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form h2 {
+    margin-bottom: 1rem;
+    font-size: 24px;
+    color: #333;
+}
+
+.login-form:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Input field styling */
+.input-field {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #4facfe;
+    outline: none;
+}
+
+/* Submit button with hover and active effects */
+.submit-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4facfe;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #00f2fe;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn:active {
+    transform: translateY(-2px);
+}

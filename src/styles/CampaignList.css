@@ -1,0 +1,258 @@
+.campaign-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    /* Light grey background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 10px 15px rgba(0, 0, 0, 0.1);
+    /* Enomorphic 3D effect */
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 900px;
+    /* Ensures it doesn’t stretch beyond a max width */
+    margin: 0 auto;
+    /* Centers the container horizontally */
+}
+
+.campaign-container:hover {
+    transform: translateY(-10px);
+    /* Lift the container on hover */
+}
+
+/* Heading styling */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Table Styling */
+.campaign-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    max-width: 900px;
+    /* Ensures the table fits within a maximum width */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-table th,
+.campaign-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Table headers styling */
+.campaign-table th {
+    background-color: #6c7880;
+    color: white;
+    font-weight: bold;
+}
+
+/* Odd and even row color */
+.campaign-table .odd-row {
+    background-color: #f2f2f2;
+    /* Ash color for odd rows */
+}
+
+.campaign-table .even-row {
+    background-color: white;
+    /* White color for even rows */
+}
+
+/* Hover effect on table rows */
+.campaign-table tr:hover {
+    background-color: #dfd8af;
+    /* Gold color on hover */
+    color: white;
+}
+
+/* Button Styling */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(52, 152, 219, 0.4);
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.page-btn {
+    margin: 0 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #3498db;
+    background-color: transparent;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.page-btn.active,
+.page-btn:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Button styles for actions */
+button.transparent-btn {
+    background-color: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button.transparent-btn:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+button.update-btn {
+    background-color: #f1c40f;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: 10px;
+}
+
+button.update-btn:hover {
+    background-color: #d4ac0d;
+}
+
+button.delete-btn {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: 10px;
+}
+
+button.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+
+/* Container for action buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    /* Distribute buttons evenly */
+    gap: 10px;
+    /* Adds spacing between buttons */
+    align-items: center;
+    /* Ensures vertical alignment */
+}
+
+/* General Button Styling */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    /* Slightly enlarges on hover */
+}
+
+/* Specific Button Styling */
+button.transparent-btn {
+    background-color: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+    padding: 6px 10px;
+}
+
+button.transparent-btn:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+button.update-btn {
+    background-color: #f1c40f;
+    color: white;
+}
+
+button.update-btn:hover {
+    background-color: #d4ac0d;
+}
+
+button.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.page-btn {
+    margin: 0 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #3498db;
+    background-color: transparent;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.page-btn.active,
+.page-btn:hover {
+    background-color: #3498db;
+    color: white;
+}

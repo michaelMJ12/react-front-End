@@ -1,0 +1,66 @@
+.dashboard {
+    padding: 20px;
+    margin-left: 100px;
+    /* Increased left margin to move content away from sidebar */
+}
+
+.dashboard-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    /* Reduced gap to bring the budget cards closer */
+    margin-bottom: 20px;
+}
+
+.dashboard-card {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.budget-card {
+    width: 130px;
+    /* Reduced width to bring them closer */
+    height: 100px;
+    /* Reduced height for better alignment */
+    text-align: center;
+}
+
+.dashboard-card h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+.dashboard-card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-graphs {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    /* Increased gap between the graph containers */
+}
+
+.graph-card {
+    width: 50%;
+    /* Reduced width for smaller graph containers */
+    padding: 20px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.graph-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
